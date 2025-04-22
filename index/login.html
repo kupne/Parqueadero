@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Parqueadero - Iniciar Sesión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("WhatsApp Image 2025-04-22 at 5.49.38 AM.jpeg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      display: block;
+      margin-top: 15px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form action="/login" method="post">
+      <input type="text" name="usuario" placeholder="Usuario" required>
+      <input type="password" name="clave" placeholder="Contraseña" required>
+      <input type="submit" value="Entrar">
+    </form>
+    <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+  </div>
+
+</body>
+</html>
